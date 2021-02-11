@@ -37,7 +37,13 @@ fc-cache -f
 
 #dir color using dircolors.ansi-dark
 echo "Fixing dir-colors"
-curl https://raw.githubusercontent.com/seebi/dircolors-solarized/master/dircolors.ansi-dark --output ~/.dircolors
+
+if [ ! -e "${HOME}/.dircolors" ]; then
+    echo "Fixing Dir Colors"
+    curl https://raw.githubusercontent.com/seebi/dircolors-solarized/master/dircolors.ansi-dark --output ~/.dircolors
+else
+    echo "DirColors already exists"
+fi;
 
 # adding JAVA_HOME path
 echo "export JAVA_HOME=/usr/lib/jvm/java-version" >> ~/.bash_profile
