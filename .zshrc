@@ -109,7 +109,7 @@ alias nvim="/usr/bin/nvim.appimage"
 alias doc="cd $HOME/Documents/"
 alias python="python3"
 alias downloads="$HOME/Downloads"
-
+alias refershenv="source $HOME/.zshrc"
 alias documents="$HOME/Documents"
 # use no brower if you are using WSL
 # alias jupyter-notebook="~/.local/bin/jupyter-notebook --no-browser"
