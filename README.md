@@ -1,3 +1,3 @@
 # Linux Config
 
-## This config consists [zsh](), [bash] and [nerd Font]
+## This config consists [zsh](), [bash]() and [nerd Font]()
